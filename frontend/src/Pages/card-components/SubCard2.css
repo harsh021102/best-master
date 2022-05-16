@@ -1,0 +1,99 @@
+.outer__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    /* background: #e0f7fa; */
+    /* border: 3px solid green;     */
+}
+.container__1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.container__1 .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__1 .card .imgBx img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container__1 .card .content__sub{
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: bottom 0.5s;
+    transition-delay: 0.2s;
+}
+.container__1 .card:hover .content__sub
+{
+    bottom: 0px;
+}
+.container__1 .card .content__sub .contentBx h3{
+    color: #fff;
+    text-transform: 2px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition-duration: 0.4s;
+}
+.container__1 .card:hover .content__sub .contentBx h3
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.container__1 .card:hover .content__sub .contentBx h3 span{
+    font-size: 12px;
+    font-weight: 200;
+    text-transform: initial;
+}
+.container__1 .card .content__sub .sci{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+.container__1 .card .content__sub .sci li{
+    list-style: none;
+    /* margin: 0 10px; */
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s * var(--i));
+}
+.container__1 .card:hover .content__sub .sci li{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.container__1 .card .content__sub .sci li a{
+    color: #fff;
+    font-size: 24px;
+}

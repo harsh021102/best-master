@@ -1,0 +1,7 @@
+.mainscreen{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: hsl(233, 47%, 13%);
+    height: 100vh;
+}

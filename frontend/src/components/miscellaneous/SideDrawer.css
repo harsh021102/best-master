@@ -1,0 +1,16 @@
+.sidebar__icon__container {
+    flex: 1;
+    /* border: 1px solid blue; */
+}
+
+.sidebar__ic {
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    gap: 2rem;
+
+    /* border: 1px solid red; */
+}

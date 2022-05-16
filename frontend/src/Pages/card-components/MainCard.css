@@ -1,0 +1,69 @@
+.container{
+    width: 80%;
+    height: 60%;
+    overflow: hidden;
+}
+.card{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.text-section{
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(233, 47%, 7%);
+    align-items: center;
+}
+.content{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+    /* border: 1px solid pink; */
+    padding: 20px 0;
+}
+.content .heading{
+    grid-column: 1/4;
+    font-size: 2.8em;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    padding: 50px 0 0 0;
+}
+.content .heading span{
+    color: hsla(277, 64%, 61%,0.9);
+}
+.content p{
+    font-size: 16px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+}
+.c-section h2{
+    font-size:1.4em;
+    color: hsl(0, 0%, 100%);
+}
+.c-section p{
+    font-size: 13px;
+}
+.content p{
+    grid-column: 1/4;
+}
+.image-section{
+    grid-column: 2/3;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    background-image: 
+        url(/src/Pages/images/tictactoe.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}

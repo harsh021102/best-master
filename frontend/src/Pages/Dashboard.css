@@ -1,0 +1,8 @@
+.dashboard
+{
+    display: flex;
+   
+    flex: 1;
+    background-color: hsl(233, 47%, 13%);
+    height: 100vh;
+}

@@ -1,0 +1,6 @@
+.card__section{
+    display: flex;
+    /* border: 1px solid red; */
+    height: 100%;
+    justify-content: center;
+}

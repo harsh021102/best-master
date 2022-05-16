@@ -1,0 +1,29 @@
+.card__container{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 50px 0;
+    gap: 1rem;
+}
+.card__container__1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid pink;
+    height: 100%; */
+    width: 80%;
+}
+.card__container__heading{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2em;
+    width: 80%;
+}
